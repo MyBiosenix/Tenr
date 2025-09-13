@@ -1,0 +1,69 @@
+.abpage{
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    max-width: 100vw;
+}
+
+
+.acont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+}
+.acont h2 {
+ font-size: 28px;
+  text-align: center;
+  color: #003A34; /* brand dark green */
+  margin-bottom: 25px;
+  border-bottom: 3px solid #FF7E29; /* orange underline */
+  display: inline-block; /* keeps underline only under text */
+  padding-bottom: 4px;
+}
+
+
+.mycont1 p{
+    font-size: 17px;
+}
+.myaboutcomp{
+    
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.abimg img{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+@media (max-width:450px){
+    .acont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        padding: 10px 20px; 
+        box-sizing: border-box;
+    }
+    .myaboutcomp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .abimg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .abimg img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  align-items: center;
+  background: #ffffff;
+}
+
+.about h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #003A34; /* matches logo text */
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about h2 u {
+  text-decoration: none;
+  border-bottom: 3px solid #FF7E29; /* underline with brand orange */
+  padding-bottom: 5px;
+}
+
+.in-about h3 {
+  font-size: 23px;
+  color: #0056B3;
+  background: #f5faff; /* light blue tint */
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.in-about p {
+  font-size: 20px;
+
+  color: #333;
+  text-align: justify;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.in-data {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.in-data:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 2px solid #FF7E29; /* highlight with orange */
+}
+
+.in-data p {
+  font-size: 17px;
+  color: #003A34;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 36px;
+  color: #FF7E29; /* brand orange for icons */
+}
+
+@media (max-width: 450px) {
+  .about {
+    padding: 10px 15px;
+  }
+  .about h2 {
+    font-size: 25px;
+  }
+  .in-about h3 {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+  .in-about p {
+    font-size: 16px;
+  }
+  .features {
+    gap: 15px;
+  }
+  .in-data {
+    padding: 15px;
+  }
+  .icon {
+    font-size: 28px;
+  }
+}

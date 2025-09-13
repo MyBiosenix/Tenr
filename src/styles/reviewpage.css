@@ -1,0 +1,8 @@
+.myrpage{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}

@@ -1,0 +1,90 @@
+.qualities{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.qualities h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #003A34; /* brand dark green */
+  margin-bottom: 25px;
+}
+
+.qualities h2 u {
+  text-decoration: none;
+  border-bottom: 3px solid #FF7E29; /* brand orange */
+  padding-bottom: 4px;
+}
+
+.onerow{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.q-card{
+    background-color: white;
+    width: 25%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.q-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 2px solid #FF7E29; /* highlight with orange */
+}
+
+.iconnn{
+    color: #FF7E29;
+    font-size: 40px;
+}
+.q-card h3{
+    font-size: 25px;
+}
+.q-card p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+@media (max-width:450px){
+    .qualities{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 15px;
+    }
+    .qualities h2{
+        font-size: 25px;
+    }
+    .onerow{
+        display: grid;
+        justify-content: center;
+        place-items: center;
+        width: 100%;
+    }
+    .q-card{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .iconnn{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .q-card h3{
+        font-size: 22px;
+        margin-top: -10px;
+    }
+}

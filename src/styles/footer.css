@@ -1,0 +1,142 @@
+.footer{
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    margin-top: 50px;
+}
+.in-footer{
+    display: flex;
+    padding: 30px 50px;
+    justify-content: center;
+    gap: 60px;
+}
+.myalert{
+    display: flex;
+    flex-direction: column;
+}
+.myalert h2{
+    color: #FF7E29;
+}
+.in-myalert{
+    display: flex;
+    flex-direction: column;
+}
+.getalerts{
+    display: flex;
+    margin-top: -20px;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.getalerts:hover{
+    color: #FF7E29;
+}
+.getalerts p{
+    font-size: 15px;
+}
+.symbol{
+    font-size: 16px; /* default size */
+    width: 16px;
+    height: 16px;
+    min-width: 12px;
+    min-height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    color: #FF7E29;
+}
+.in-support{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    flex: 1; 
+    word-break: break-word; 
+    text-decoration: none;
+}
+.in-support a{
+    color: black;
+}
+.in-support a:hover{
+    color: #FF7E29;
+}
+.in-support:hover{
+    color: #FF7E29;
+    cursor: pointer;
+}
+.onme{
+    background-color: #FF7E29;
+    width: 80%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.legalities p{
+    font-size: 20px;
+}
+
+
+@media (max-width:450px){
+    .footer{
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .in-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        padding: 15px 15px;   /* 🔥 reduced padding for mobile */
+    }
+    .myalert{
+        width: 100%;
+    }
+    
+    .in-myalert{
+        gap: 10px;
+    }
+    .symbol{
+        font-size: 12px;
+        width: 12px;
+        height: 12px;
+    }
+    .getalerts{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .getalerts p{
+        font-size: 12px;
+    }
+
+    .in-support{
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .mytags{
+        font-size: 20px;
+    }
+    .in-support a {
+        color: black;
+        font-size: 15px;
+        flex: 1; 
+        word-break: break-word; 
+        text-decoration: none;
+    }
+
+    .legalities p{
+        font-size: 15px;
+    }
+    .onme{
+        color: black;
+        font-weight: 100;
+    }
+}

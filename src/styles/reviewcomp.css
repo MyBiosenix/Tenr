@@ -1,0 +1,246 @@
+.getit{
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+    justify-content: center;
+}
+.myh2{
+   font-size: 28px;
+  text-align: center;
+  color: #003A34; 
+  margin-bottom: 25px;
+  border-bottom: 3px solid #FF7E29;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+
+.reviewpage{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    width: 50%;
+
+}
+.in-re{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-top: -20px;
+}
+
+.myprop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+}
+.in-myprop{ 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.usericon{
+    width: 15%;
+    height: 70px;
+    border-radius: 50%;
+}
+.namereview{
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+}
+.rateicon{
+    margin-top: -10px;
+    color: goldenrod;
+}
+.rightcont{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 30px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5%;
+}
+.myimgs12{
+    display: flex;
+    gap: 5px;
+}
+.in-myimgs12{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.byy{
+    width: 50%;
+    border-radius: 5%;
+}
+.hyy{
+    width: 100%;
+    border-radius: 5%;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+}
+.names h3{
+    font-size: 25px;
+}
+.starts{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom:10px;
+}
+.rateicon1{
+    color: goldenrod;
+}
+.empty{
+    color: rgb(180, 180, 180);
+}
+.mynavs{
+    display: flex;
+    gap: 5px;
+}
+.in-mynavs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius:50px;
+    background-color: white;
+    padding: 10px;
+    height: 20px;
+    border-color: rgb(172, 172, 172);
+}
+.add{
+    width: 70%;
+}
+.reviewpicon{
+    color: #009CFD;
+}
+.reviewpicon1{
+    color: #009CFD;
+    transform: rotate(90deg);
+}
+.reviewpicon3{
+    width: 20px;
+}
+.starts label{
+    color: blue;
+    cursor: pointer;
+    margin-top: -3px;
+}
+.starts{
+    display: flex;
+    align-items: center;
+}
+.hours {
+  margin-top: 10px;
+}
+
+.hours summary {
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.hours-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.hours-list li {
+  margin: 2px 0;
+}
+.load-more-btn {
+  padding: 10px 20px;
+  margin: 20px auto 0;
+  border: none;
+  border-radius: 25px;
+  background-color: goldenrod;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #007bc3;
+}
+
+
+@media (max-width:450px){
+    .getit{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        gap: 30px;
+    }
+    .myh2{
+        background-color: #ffffff;
+        font-size: 25px;
+    }
+    
+    .reviewpage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .in-re {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        max-height: unset;
+        overflow-y: unset;
+        margin-top: 0;
+        padding-right: 0;
+    }
+    .myh2{
+        margin-top: 10px;
+    }
+    .rightcont{
+        width: 85%;
+    }   
+
+    .mynavs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .in-mynavs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px 10px;
+        width: 80%; 
+        
+    }
+    .usericon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .namereview h3{
+        font-size: 16px;
+    }
+    .rateicon{
+        font-size: 15px;
+    }
+    .myprop p{
+        font-size: 13px;
+    }
+}

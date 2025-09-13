@@ -1,0 +1,82 @@
+.process1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f9fafb; /* light subtle bg */
+}
+
+.process1 h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #003A34; /* brand dark green */
+  margin-bottom: 30px;
+}
+
+.process1 h2 u {
+  text-decoration: none;
+  border-bottom: 3px solid #FF7E29; /* brand orange */
+  padding-bottom: 4px;
+}
+
+.processdiv {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.myprocess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.myicon {
+  font-size: 120px;
+  background: white;
+  padding: 25px;
+  border-radius: 20%;
+  color: #FF7E29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myicon:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.15);
+}
+
+.myprocess h4 {
+  font-size: 18px;
+  margin-top: 12px;
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 450px) {
+  .process1 {
+    padding: 20px 15px;
+  }
+  .process1 h2 {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .processdiv {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+  .myicon {
+    font-size: 100px;
+    
+    padding: 15px 30px; 
+  }
+}

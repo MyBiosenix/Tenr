@@ -1,0 +1,242 @@
+/* Container styling */
+body,html{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.inclusive1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.inclusive1 h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #003A34; /* brand dark green */
+  margin-bottom: 25px;
+}
+
+.inclusive1 h2 u {
+  text-decoration: none;
+  border-bottom: 3px solid #FF7E29; /* brand orange */
+  padding-bottom: 4px;
+}
+
+#vip {
+  color: white;
+  font-size: 22px;
+  background: linear-gradient(to right,navy,blue);
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Cards layout */
+.pricingdiv1 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 25px 20px;
+  width: 25%;
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.progress {
+  background-color: navy;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin: -10px 0 10px 0;
+  text-align: left;
+  width: auto;
+  display: flex;
+  align-self: flex-start;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+/*
+#0044cc
+#f0f4ff
+*/
+
+
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+.project h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 6px;
+}
+.ribbon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding: 10px 0;
+  background-color: #FF7E29;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  top: 20px;
+  right: -50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.project h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #222;
+}
+.project.highlight {
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  background-color: navy;
+  color: white;
+  border: 1px solid #007bff;
+}
+.project.highlight p{
+  color: white;
+}
+.project.highlight h3,
+.project.highlight h4{
+  color: white;
+}
+
+.project.highlight .progress{
+  background-color: #ffffff;
+  color: red;
+  font-weight: bold;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+/* Buy Now button */
+.project button {
+  margin: 15px 0 20px 0;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project button:hover {
+  background-color: #0056b3;
+}
+
+/* Description section */
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.desc-line {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+  margin: 4px 20px;
+}
+
+.check-icon {
+  color: #007bff;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+
+@media (max-width:450px){
+  .inclusive1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+  .inclusive1 h2{
+    background-color: #ffffff;
+    font-size: 25px;
+  }
+  .pricingdiv1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  #vip {
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(to right,navy,blue);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .project{
+    width: 85%;
+  }
+  .project h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 6px;
+  }
+  .project h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    color: #222;
+  }
+  .desc-line{
+    font-size: 14px;
+  }
+  .check-icon{
+    font-size: 14px;
+  }
+  .progress{
+    font-size: 10px;
+    margin-left: -10px
+  }
+  .ribbon span {
+    box-sizing: border-box;
+  }
+}
