@@ -28,7 +28,7 @@ function Type() {
         />
 
         <DataProp
-          title="Bank Captcha Verifier"
+          title="BANK CAPTCHA VERIFIER"
           description={[
             "CAPTCHA protects websites from bots and spam.",
             "Provides simple tests easily passed by humans.",

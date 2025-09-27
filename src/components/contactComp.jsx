@@ -123,8 +123,8 @@ function ContactComp() {
             <div className='intag'>
               <h2>Chat Support!</h2>
               <h3>
-                <a href="https://wa.me/919326381972" target="_blank" rel="noopener noreferrer">
-                  +91 93263 81972
+                <a href="https://wa.me/917400472473" target="_blank" rel="noopener noreferrer">
+                  +91 74004 72473
                 </a>
               </h3>
             </div>
@@ -145,7 +145,7 @@ function ContactComp() {
             <div className='intag'>
               <h2>Address!</h2>
               <h3><a
-                href="https://www.google.com/maps/search/?api=1&query=27th+Main,+Sector+6,+HSR+Layout,+Bangalore,+Karnataka,+India-560102"
+                href="https://www.google.com/maps/search/1st+Floor,+4th+B+Main,+OMBR+Layout,+Banaswadi,+,+BANGALORE,+Karnataka,+India+-+560043./@12.9567543,77.4123817,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer">
                   1st Floor, 4th B Main, OMBR Layout, Banaswadi, , BANGALORE, Karnataka, India - 560043.

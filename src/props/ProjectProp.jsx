@@ -1,7 +1,7 @@
   import React from 'react';
   import { HiCheckCircle } from 'react-icons/hi';
 
-  function ProjectProp({ proj, discount, title, description, price, access, className, onAccessClick }) {
+  function ProjectProp({ proj, discount, title, description, ip, price, access, className, onAccessClick }) {
     return (
       <div className={`project ${className || ''}`}>
         <p className='progress'>{proj}</p>
@@ -10,7 +10,10 @@
         </div>
 
         <h3>{title}</h3>
-        <h4>{price}</h4>
+        <div className='pricess'>
+          <h4>{ip}</h4>
+          <h3>{price}</h3>
+        </div>
         <button onClick={() => onAccessClick(title)}>{access}</button>
 
         <div className='desc'>

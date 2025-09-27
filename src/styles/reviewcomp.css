@@ -32,6 +32,32 @@
     margin-top: -20px;
 }
 
+/* Style only the scrollbar inside the reviews container */
+.in-re::-webkit-scrollbar {
+  width: 8px;            /* slim scrollbar */
+}
+
+.in-re::-webkit-scrollbar-track {
+  background: #f1f1f1;   /* light background */
+  border-radius: 10px;
+}
+
+.in-re::-webkit-scrollbar-thumb {
+  background: goldenrod;  /* golden handle */
+  border-radius: 10px;
+}
+
+.in-re::-webkit-scrollbar-thumb:hover {
+  background: #007bc3;   /* hover effect */
+}
+
+/* Firefox support */
+.in-re {
+  scrollbar-width: thin;           /* slim */
+  scrollbar-color: goldenrod #f1f1f1; /* thumb color | track color */
+}
+
+
 .myprop{
     display: flex;
     flex-direction: column;
@@ -175,6 +201,21 @@
 
 .load-more-btn:hover {
   background-color: #007bc3;
+}
+.review-time {
+  font-size: 12px;
+  color: gray;
+  margin-top: 2px;
+}
+
+.company-reply {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #f5f5f5;
+  border-left: 3px solid #FF7E29;
+  font-size: 14px;
+  color: #333;
+  border-radius: 5px;
 }
 
 

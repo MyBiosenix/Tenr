@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Styles/project.css'
+import '../styles/project.css'
 import ProjectProp from '../props/ProjectProp'
 import EnquiryModal from '../Modals/EnquiryModal';
 
@@ -24,7 +24,7 @@ function Project() {
       <div className='pricingdiv1'>
         <ProjectProp
           proj="Data Conversion"
-          discount="50% Off"
+         
           title="Gold"
           price="₹ 1999/-"
           access = "Buy Now!"
@@ -33,7 +33,7 @@ function Project() {
             "Accuracy Required: 85.00%",
             "Max Errors Accepted: 15.00%",
             "Earning Per Page: Rs. 150.00/-",
-            "Software validity: 06 Month",
+            "Contract Duration: 06 Month",
             "Freelancer Fee: Rs. 1,999/-",
             "Minimum Submission: 75 Pages",
             "Work Duration: 15 Days",
@@ -44,8 +44,9 @@ function Project() {
   
           <ProjectProp
           proj="Data Conversion"
-          discount="50% Off"
+          discount="35% Off"
           title="Diamond"
+          ip="₹ 6000"
           price="₹ 3999/-"
           access="Buy Now!"
           description={[
@@ -66,8 +67,9 @@ function Project() {
 
         <ProjectProp
           proj="Data Conversion"
-          discount="50% Off"
+          discount="25% Off"
           title="VIP"
+          ip="₹ 4000"
           price="₹ 2999/-"
           access = "Buy Now!"
           description={[

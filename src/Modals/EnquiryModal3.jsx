@@ -1,5 +1,5 @@
     import React, { useState, useEffect } from 'react';
-    import '../styles/enquirymodal.css'
+    import '../Styles/enquirymodal.css'
 
 
     function EnquiryModal({ show, onClose, selectedPlan }) {
@@ -31,7 +31,7 @@
         }
 
         const formData = new FormData();
-        formData.append('access_key','89847795-abfe-45fb-8e4d-3b81ea6970e4')
+        formData.append('access_key','7ac78ac6-2cc9-47a0-a39a-9d62f551c126')
         formData.append('name',name);
         formData.append('phone',number);
         formData.append('project',selectedProject);
@@ -50,7 +50,7 @@
         setName('');
         setNumber('');
         setSelectedProject('Data Conversion');
-        setPlan(selectedPlan || 'Gold');
+        setPlan(selectedPlan || 'Silver');
         onClose();
       } else {
         alert('Form submission failed. Please try again.');
@@ -65,7 +65,7 @@
     return (
         <div className='modal-backdrop'>
         <div className='modal-box'>
-            <h2>Acewok Technologies</h2>
+            <h2>Tenr Global Solution</h2>
             <form className='modal-box1' onSubmit={handleSend}>
             <input
             type='text'

@@ -45,7 +45,7 @@ function ReviewModal({ show, onClose, onSubmit }) {
 
 
   const formData = new FormData();
-  formData.append('access_key', '89847795-abfe-45fb-8e4d-3b81ea6970e4'); 
+  formData.append('access_key', '7ac78ac6-2cc9-47a0-a39a-9d62f551c126'); 
   formData.append('name', name);
   formData.append('rating', rating.toString());
   formData.append('review', review);

@@ -35,89 +35,110 @@ function ReviewComp() {
 
   const allReviews = [
     {
-      name: "Amit Roy",
-      icon: review3,
-      review: "This is a legitimate work-from-home opportunity."
-    },
-    {
-      name: "Divya Mehta",
-      icon: review7,
-      review: "Reliable platform for remote work. Payments are always on time, and support is responsive."
-    },
-    {
-      name: "Rohan Desai",
-      icon: review4,
-      review: "Genuine payment and real work."
-    },
-    {
-      name: "Preeti Singh",
-      icon: review9,
-      review: "Supportive team and smooth onboarding."
-    },
-    {
-      name: "Vishal Yadav",
-      icon: vishal,
-      review: "A trustworthy platform—easy onboarding and genuine work opportunities."
-    },
-    {
-      name: "Sakshi Ghorpade",
-      icon: sakshi,
-      review: "I appreciate how smooth and transparent the entire process is, from applying to getting paid."
-    },
-    {
-      name: "Vaishnavi Chouhan",
-      icon: vaishnavi,
-      review: "The support team is quick to respond and the projects are legit. Great experience so far."
-    },
-    {
-      name: "Sahil Malik",
-      icon: sahil,
-      review: "One of the few freelancing sites that actually delivers on its promises. Highly recommended."
-    },
-    {
-      name: "Sonali Samane",
-      icon: sonali,
-      review: "Great experience! I've completed multiple tasks and every payment came through without delay."
-    },
-    {
-      name: "Kunal Vishwakama",
-      icon: kunal,
-      review: "A fantastic platform for anyone starting out in remote work. Clear instructions and helpful team."
-    },
-    {
-      name: "Aakash Kushwaha",
-      icon: aakash,
-      review: "Simple, efficient, and trustworthy. Finally found a freelancing space that respects time and skill."
-    },
-    {
       name: "Raju Karira",
       icon: raju,
-      review: "Great experience so far! Completed 3 projects and got paid on time each time. Totally legit."
+      review: "Great experience so far! Completed 3 projects and got paid on time each time. Totally legit.",
+      time: "2 days ago",
+      reply: "Thank you, Raju! Glad to know you had a great experience."
     },
     {
       name: "Anuj Mota",
       icon: anuj,
-      review: "It's best for the people who want to work from Home.It's very Supporting.I am really happy for believing in this and getting paid for the work"
+      review: "It's best for the people who want to work from Home.It's very Supporting.I am really happy for believing in this and getting paid for the work",
+      time: "3 days ago"
     },
     {
       name: "Vaishali Shellar",
       icon: review11,
-      review: "Really happy for believing in this and getting paid"
+      review: "Really happy for believing in this and getting paid",
+      time: "1 Week ago",
+      reply: "Thank you Vaishali! Happy to have you onboard."
     },
     {
       name: "Kajal Kamra",
       icon: review6,
-      review: "This isn’t just a platform—it’s a supportive community for remote job seekers. I highly appreciate that."
+      review: "This isn’t just a platform—it’s a supportive community for remote job seekers. I highly appreciate that.",
+      time: "12 days ago",
+      reply: "Thank You"
     },
     {
       name: "Vivek Sharma",
       icon: review5,
-      review: "Super easy to use. Good for beginners."
+      review: "Super easy to use. Good for beginners.",
+      time: "13 days ago"
     },
     {
       name: "Neha Gupta",
       icon: review8,
-      review: "Excellent experience with this freelancing service."
+      review: "Excellent experience with this freelancing service.",
+      time: "17 days ago"
+    },
+    {
+      name: "Amit Roy",
+      icon: review3,
+      review: "This is a legitimate work-from-home opportunity.",
+      time: "18 days ago"
+    },
+    {
+      name: "Divya Mehta",
+      icon: review7,
+      review: "Reliable platform for remote work. Payments are always on time, and support is responsive.",
+      time: "22 days ago"
+    },
+    {
+      name: "Rohan Desai",
+      icon: review4,
+      review: "Genuine payment and real work.",
+      time: "27 day ago"
+    },
+    {
+      name: "Preeti Singh",
+      icon: review9,
+      review: "Supportive team and smooth onboarding.",
+      time: "1 Month ago"
+    },
+    {
+      name: "Vishal Yadav",
+      icon: vishal,
+      review: "A trustworthy platform—easy onboarding and genuine work opportunities.",
+      time: "1 Month ago",
+      reply: "ThankYou for that"
+    },
+    {
+      name: "Sakshi Ghorpade",
+      icon: sakshi,
+      review: "I appreciate how smooth and transparent the entire process is, from applying to getting paid.",
+      time: "1 Month ago"
+    },
+    {
+      name: "Vaishnavi Chouhan",
+      icon: vaishnavi,
+      review: "The support team is quick to respond and the projects are legit. Great experience so far.",
+      time: "1 Month ago"
+    },
+    {
+      name: "Sahil Malik",
+      icon: sahil,
+      review: "One of the few freelancing sites that actually delivers on its promises. Highly recommended.",
+      time: "1 Month ago"
+    },
+    {
+      name: "Sonali Samane",
+      icon: sonali,
+      review: "Great experience! I've completed multiple tasks and every payment came through without delay.",
+      time: "1 Month ago"
+    },
+    {
+      name: "Kunal Vishwakama",
+      icon: kunal,
+      review: "A fantastic platform for anyone starting out in remote work. Clear instructions and helpful team.",
+      time: "1 Month ago"
+    },
+    {
+      name: "Aakash Kushwaha",
+      icon: aakash,
+      review: "Simple, efficient, and trustworthy. Finally found a freelancing space that respects time and skill.",
+      time: "1 Month ago"
     },
   ];
 
@@ -141,8 +162,8 @@ function ReviewComp() {
     };
 
     const weekDays = Object.keys(hoursMap);
-    const todayIndex = new Date().getDay();
-    const jsToCustomIndex = [6, 0, 1, 2, 3, 4, 5]; 
+    const todayIndex = new Date().getDay(); 
+    const jsToCustomIndex = [6, 0, 1, 2, 3, 4, 5];
     const todayCustomIndex = jsToCustomIndex[todayIndex];
 
     const ordered = [
@@ -177,6 +198,9 @@ function ReviewComp() {
               name={item.name}
               rate={<FaStar />}
               review={item.review}
+              time={item.time}
+              reply={item.reply}
+
             />
           ))}
           {visibleCount < allReviews.length && (

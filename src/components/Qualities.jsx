@@ -15,7 +15,7 @@ function Qualities() {
         
         <QualityProp icon={<FiHeadphones/>}
         title="Support"
-        description="We offer support 24/7"/>
+        description="Business days: Monday-Saturday (11am - 6pm)"/>
 
         <QualityProp icon={<FaLanguage/>}
         title="Language"

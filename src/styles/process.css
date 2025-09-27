@@ -70,7 +70,7 @@
   }
   .processdiv {
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     width: 100%;
     align-items: center;
   }

@@ -113,13 +113,6 @@ body,html{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-
-.project h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-  color: #222;
-}
 .project.highlight {
   transform: scale(1.08);
   z-index: 10;
@@ -182,6 +175,31 @@ body,html{
   margin-right: 8px;
   font-size: 18px;
 }
+.pricess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricess h4 {
+  font-size: 18px;
+  color: #888;
+  text-decoration-line: line-through;    /* the line itself */
+  text-decoration-color: red;            /* the color of the line */
+  text-decoration-thickness: 2px;  
+  margin: 0;
+}
+
+.pricess h3 {
+  font-size: 28px;
+  color: #007bff;
+  font-weight: bold;
+  margin: 0;
+}
+.project.highlight .pricess h4{
+  color: #888;
+}
 
 
 @media (max-width:450px){
@@ -220,11 +238,15 @@ body,html{
     color: #333;
     margin-bottom: 6px;
   }
-  .project h4 {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0;
-    color: #222;
+  .pricess h3{
+    font-size: 20px;
+  }
+  .pricess h4{
+    font-size: 15px;
+    color: #888;
+    text-decoration-line: line-through;    
+    text-decoration-color: red;          
+    text-decoration-thickness: 2px;  
   }
   .desc-line{
     font-size: 14px;

@@ -32,6 +32,7 @@
 }
 .getalerts p{
     font-size: 15px;
+    text-transform: uppercase;
 }
 .symbol{
     font-size: 16px; /* default size */

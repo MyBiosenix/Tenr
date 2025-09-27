@@ -77,7 +77,7 @@ function ComplainComp() {
                 This Complaint form is for recruited Typists (freelancers).<br/>
                 Fill complaint form given below. We will solve complaint within 3 working days.
             </p>
-            <p className='note'>NOTE: If you are new applicant and you have any issue then you can send emails to contact@tenrglobalsolution.com</p>
+            <p className='note'>NOTE: If you are new applicant and you have any issue then you can send emails to info@tenrglobalsolution.com</p>
         </div>
         <div className='comp-form'>
             <form className='in-compform' ref={form} onSubmit={handleComplain}>

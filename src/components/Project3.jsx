@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import '../Styles/project.css'
+import '../styles/project.css'
 import ProjectProp from '../props/ProjectProp'
 import EnquiryModal3 from '../Modals/EnquiryModal3'
 
@@ -21,15 +21,14 @@ function Project3() {
       <div className='pricingdiv1'>
         <ProjectProp
           proj="Bank Captcha Verifier"
-          discount="50% Off"
           title="Gold"
-          price="₹ 1,999/-"
+          price="₹ 1999/-"
           access="Buy Now!"
           description={[
             "Captcha Count: 16000",
             "Contact Duration : 06 Month",
             "Skip Accuracy: 0%",
-            "Freelancer Fee: Rs.1,999/-",
+            "Freelancer Fee: Rs.1999/-",
             "Per Captcha Amount: Rs 1/-",
             "Work Duration: 1 Month",
             "Payment : Rs. 16,000/-",
@@ -41,9 +40,10 @@ function Project3() {
 
         <ProjectProp
           proj="Bank Captcha Verifier"
-          discount="50% Off"
-          title="Platinum"
-          price="₹ 3,999/-"
+          discount="35% Off"
+          title="Diamond"
+          ip="₹ 6000"
+          price="₹ 3999/-"
           access="Buy Now"
           className="highlight"
           description={[
@@ -62,9 +62,10 @@ function Project3() {
 
         <ProjectProp
           proj="Bank Captcha Verifier"
-          discount="50% Off"
+          discount="25% Off"
           title="VIP"
-          price="₹ 2,999/-"
+          ip="₹ 4000"
+          price="₹ 2999/-"
           access="Buy Now!"
           description={[
             "Captcha Count: 16000",
