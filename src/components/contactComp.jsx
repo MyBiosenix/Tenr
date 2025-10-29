@@ -123,8 +123,8 @@ function ContactComp() {
             <div className='intag'>
               <h2>Chat Support!</h2>
               <h3>
-                <a href="https://wa.me/917400472473" target="_blank" rel="noopener noreferrer">
-                  +91 74004 72473
+                <a href="https://wa.me/919137683024" target="_blank" rel="noopener noreferrer">
+                  +91 91376 83024
                 </a>
               </h3>
             </div>

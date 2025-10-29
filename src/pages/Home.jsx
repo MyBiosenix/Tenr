@@ -9,7 +9,6 @@ import Process from '../components/Process'
 import Project from '../components/Project'
 import Project2 from '../components/Project2'
 import Project3 from '../components/Project3'
-import Strategy from '../components/Strategy'
 import Reviews from '../components/Reviews'
 import Footer from '../components/Footer'
 import ScrollTop from '../components/ScrollTop'
@@ -42,7 +41,6 @@ function Home() {
       <Project/>
       <Project2/>
       <Project3/>
-      <Strategy/>
       <Reviews/>
       <Footer/>
       <ScrollTop/>
