@@ -7,12 +7,10 @@ import mymap from '../assets/mymap.png';
 import locimg from '../assets/locimg.png';
 import office3 from '../assets/office3.jpg';
 import world from '../assets/world.png';
-import raju from '../assets/raju.jpg';
+
 import { useNavigate } from 'react-router-dom';
 import ReviewModal from '../Modals/ReviewModals';
-import anuj from '../assets/anuj.jpg'
-import review11 from '../assets/review11.webp'
-import review6 from '../assets/review6.jpg'
+
 import review5 from '../assets/review5.jpg'
 import review8 from '../assets/review8.jpg'
 import review3 from '../assets/review3.jpg'
@@ -27,6 +25,10 @@ import sonali from '../assets/sonali.jpg'
 import kunal from '../assets/kunal.avif'
 import aakash from '../assets/aakash.jpg'
 
+import ava1 from '../assets/12.jpeg'
+import ava2 from '../assets/25.jpeg'
+import ava3 from '../assets/34.jpeg'
+import ava4 from '../assets/45.jpeg'
 
 function ReviewComp() {
   const navigate = useNavigate();
@@ -36,27 +38,27 @@ function ReviewComp() {
   const allReviews = [
     {
       name: "Raju Karira",
-      icon: raju,
+      icon: ava2,
       review: "Great experience so far! Completed 3 projects and got paid on time each time. Totally legit.",
       time: "2 days ago",
       reply: "Thank you, Raju! Glad to know you had a great experience."
     },
     {
       name: "Anuj Mota",
-      icon: anuj,
+      icon: ava1,
       review: "It's best for the people who want to work from Home.It's very Supporting.I am really happy for believing in this and getting paid for the work",
       time: "3 days ago"
     },
     {
       name: "Vaishali Shellar",
-      icon: review11,
+      icon: ava4,
       review: "Really happy for believing in this and getting paid",
       time: "1 Week ago",
       reply: "Thank you Vaishali! Happy to have you onboard."
     },
     {
       name: "Kajal Kamra",
-      icon: review6,
+      icon: ava3,
       review: "This isn’t just a platform—it’s a supportive community for remote job seekers. I highly appreciate that.",
       time: "12 days ago",
       reply: "Thank You"

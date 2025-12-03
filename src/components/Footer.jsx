@@ -9,7 +9,7 @@ function Footer() {
     <div className='footer'>
       <div className='in-footer'>
         <div className='myalert'>
-          <h2>Stay Alert! Protect Yourself from Online Frauds</h2>
+          <h2>Note:</h2>
           <div className='in-myalert'>
             <div className='getalerts'>
               <FaAngleRight className='symbol'/>
